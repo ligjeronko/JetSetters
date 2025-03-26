@@ -1,0 +1,129 @@
+.home-content-container {
+  position: relative; /* Ensure this is positioned relative to the background */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px 20px 20px; /* Increase top margin to 40px */
+  color: white; /* Change text color for better visibility */
+  text-align: center; /* Center the text */
+  max-width: 200%; /* Adjust as needed */
+  box-shadow: 0 25px 15px rgba(238, 248, 169, 0.736);
+  overflow: hidden; /* Ensure content does not overflow */
+  padding: 20px; /* Add padding to the container */
+  border-radius: 10px; /* Optional: round corners of the container */
+}
+
+.wider-container {
+  max-width: 200%; /* Increase the maximum width for the second container */
+  background-color: #add8e6; /* Light blue background for the second section */
+  color: black; /* Change text color for better visibility in the second section */
+}
+
+/* Flexbox styling for benefits row */
+.benefits-row {
+  display: flex; /* Arrange items in a row */
+  justify-content: center; /* Center the row */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.benefit-column {
+  flex: 1; /* Make each column take equal space */
+  max-width: 200px; /* Set a max width for each column */
+  margin: 0 10px; /* Add horizontal spacing */
+  text-align: center; /* Center text within columns */
+}
+
+/* Benefit image styles */
+.benefit-image-wrapper {
+  border: 5px ridge; /* Light blue and light yellow will be set using a gradient */
+  border-image: linear-gradient(to right, lightblue, rgb(244, 244, 77)) 1; /* Gradient border */
+  padding: 5px; /* Space between border and image */
+  display: inline-block; /* Keep the wrapper inline */
+}
+
+.benefit-image {
+  border-radius: 50%; /* Make the image round */
+  max-width: 100%; /* Ensure responsive image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Background image styling */
+.home-background-image {
+  position: absolute; /* Position absolutely to cover the container */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  right: 0; /* Stretch to the right */
+  bottom: 0; /* Stretch to the bottom */
+  background-image: url("./images/JetsHome.png"); /* Background image */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  z-index: 0; /* Behind the text */
+  border-radius: 10px; /* Match the container's corners */
+}
+
+.footer-container {
+  background: url("https://img.freepik.com/premium-photo/paper-plane-speeds-up-climb-corporate-ladder_494516-1659.jpg")
+    no-repeat center center; /* Background image */
+  background-size: cover; /* Ensure the image covers the entire container */
+  margin: 40px 20px; /* Consistent top and side margins */
+  padding: 40px; /* Added padding for spacing inside the footer */
+  border-radius: 10px; /* Match rounded corners */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Optional: add shadow for depth */
+  color: white; /* Set text color for visibility */
+  text-align: center; /* Center text in the footer */
+  max-width: 100%; /* Ensure full width to match other containers */
+  overflow: hidden; /* Prevent overflow from child elements */
+}
+
+.footer-content {
+  max-width: 1200px; /* Set a max width for better control */
+  width: 100%; /* Make the content take the full width */
+  padding: 20px 20px; /* Add uniform padding */
+  margin: 0 auto; /* Center the content */
+}
+
+/* Footer Links */
+.footer-links {
+  display: flex; /* Arrange links in a row */
+  justify-content: center; /* Center the links */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 15px; /* Space between links */
+  margin-top: 20px; /* Space above the links */
+}
+
+/* Additional styles for links */
+.footer-link {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer-link:hover {
+  color: rgba(255, 255, 255, 0.8); /* Lighter on hover */
+}
+
+.home-overlay {
+  position: relative; /* Ensure this stays above the background */
+  z-index: 1; /* Make sure text is above the background */
+  padding: 2rem; /* Add padding for some space around text */
+}
+
+.home-welcome-text {
+  margin: 0; /* Remove default margin */
+}
+
+.benefits-heading {
+  font-family: "Arial", sans-serif;
+  font-size: 12px; /* Adjust font size as needed */
+  text-align: center; /* Center the text */
+  margin: 20px 0; /* Add margin above and below */
+  color: rgb(45, 45, 45); /* Change color as needed */
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+  .benefit-column {
+    max-width: 100%; /* Allow full width on smaller screens */
+    margin: 10px 0; /* Add vertical spacing */
+  }
+}

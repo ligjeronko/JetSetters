@@ -1,0 +1,175 @@
+/* Global styles (optional) */
+/* body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+} */
+
+/* Existing Styles */
+.page-content-contact {
+  display: flex; /* Flex layout */
+  flex-wrap: wrap;
+  padding: auto;
+  color: #333;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to right, #add8e6, #e6e6fa);
+  border-radius: 10px;
+  box-shadow: 0 25px 15px rgba(222, 246, 63, 0.5);
+  max-width: 95%;
+  margin: auto;
+  line-height: 1.2;
+}
+
+.h1-contact {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.p-contact {
+  margin-bottom: 8px;
+  font-size: 0.9em;
+  line-height: 1.2;
+}
+
+/* New Styles for Contact Form */
+.contact-info {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Soft white with transparency */
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px; /* Smaller width for the form */
+  margin: auto; /* Center the form */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.form-container {
+  width: 100%;
+}
+
+.contact-input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border 0.3s ease; /* Smooth border transition */
+}
+
+.contact-input:focus {
+  border-color: #007bff; /* Highlight border on focus */
+  outline: none; /* Remove default outline */
+}
+
+.submit-button {
+  background-color: #007bff; /* Button color */
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  height: 70px;
+  box-shadow: 0 25px 15px rgba(238, 248, 169, 0.736);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center; /* Center items vertically */
+  padding: 0 30px; /* Adjusted padding for top/bottom */
+  background: linear-gradient(to right, #add8e6, rgba(222, 246, 63, 0.736));
+  color: #333; /* Dark text color for contrast */
+  border-radius: 10px; /* Rounded corners */
+  margin: 20px 10px 40px; /* Margin from the top and side space */
+}
+
+.navbar-left {
+  display: flex; /* Ensure flex layout */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 0; /* Reset margin */
+  flex: 1; /* Left section takes available space */
+}
+
+.navbar-right {
+  display: flex; /* Align right items in a row */
+  align-items: center; /* Center items vertically */
+}
+
+.menu-left {
+  display: flex;
+  align-items: center; /* Center items vertically within menu-left */
+}
+
+.menu-left a {
+  color: #007bff; /* Link color */
+  padding: 8px 15px; /* Padding around links */
+  border-radius: 5px; /* Round corners for links */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.navbar a {
+  color: #333; /* Dark link color for better contrast */
+  text-decoration: none; /* Remove underline */
+  margin: 0 10px; /* Space between links */
+  padding: 8px 15px; /* Add padding around links */
+  border-radius: 5px; /* Round corners for links */
+  transition: background-color 0.3s, color 0.3s; /* Smooth background and color change */
+}
+
+.navbar a:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: rgb(1, 59, 107); /* Change text color on hover for contrast */
+}
+
+.home-button {
+  color: #333; /* Dark text color for contrast */
+  background-color: rgba(222, 246, 63, 0.736); /* Fill color */
+  border: 2px solid #007bff; /* Blue border */
+  padding: 8px 15px; /* Padding around the button */
+  border-radius: 5px; /* Round corners */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.home-button:hover {
+  background-color: rgba(222, 246, 63, 1); /* Solid fill on hover */
+  color: #0056b3; /* Darker text color on hover */
+}
+
+.navbar a.active {
+  background-color: rgba(
+    255,
+    255 255,
+    0.4
+  ); /* Background color for active link */
+  color: #000; /* Text color for active link */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .navbar a {
+    margin: 5px 0; /* Vertical margin for stacked links */
+  }
+}

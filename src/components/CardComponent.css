@@ -1,0 +1,56 @@
+/* src/components/CardComponent.css */
+
+.card {
+  width: 300px; /* Adjust size as needed */
+  height: 200px;
+  perspective: 1000px; /* Enables 3D effect */
+  margin: 20px;
+  position: relative; /* Ensure positioning context */
+}
+
+.card-front {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  text-align: center; /* Center text */
+  padding: 20px; /* Add some padding */
+  height: 100%; /* Full height */
+  background-color: lightblue; /* Front color */
+  border-radius: 10px; /* Rounded corners */
+  backface-visibility: hidden; /* Hide back face when front is visible */
+}
+
+.card-front h3 {
+  margin: 0; /* Remove default margin */
+  font-size: 1.5em; /* Adjust title size */
+}
+
+.card-front p {
+  margin: 10px 0 0; /* Space between title and description */
+  font-size: 1em; /* Adjust description size */
+}
+
+.card-back {
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden; /* Hides back face when front is visible */
+  position: absolute; /* Positioning for flip effect */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  transition: transform 0.6s; /* Smooth transition */
+  background-size: cover; /* Cover the entire card */
+  background-position: center; /* Center the background image */
+  transform: rotateY(180deg); /* Start with back facing */
+}
+
+.card:hover .card-front {
+  transform: rotateY(180deg); /* Flip front on hover */
+}
+
+.card:hover .card-back {
+  transform: rotateY(0); /* Show back on hover */
+}

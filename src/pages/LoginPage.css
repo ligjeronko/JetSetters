@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: auto; /* Allow height to adjust based on content */
+  overflow-x: hidden; /* Prevent horizontal scrolling if needed */
+  background: linear-gradient(
+    to right,
+    #add8e6,
+    #e6e6fa
+  ); /* Light blue and light purple */
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  min-height: 80vh; /* Ensures full height */
+}
+
+.container {
+  width: 400px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 25px 15px rgba(222, 246, 63, 0.736);
+  padding: 40px;
+  padding-bottom: 60px; /* Added padding at the bottom */
+  position: relative; /* Make the container position relative */
+  overflow: hidden; /* Ensure children don't overflow */
+}
+
+/* Background image styling */
+.container::before {
+  content: "";
+  background-image: url("./images/LoginImg.png"); /* Adjust the path if needed */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  position: absolute; /* Position it absolutely */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place it behind the content */
+  opacity: 0.3; /* Optional: Add some transparency */
+}
+
+.form h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.inputBox {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.inputBox input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #333; /* Text color for input */
+}
+
+button {
+  width: 100%;
+  background: #fff; /* Button background */
+  color: #333; /* Button text color */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.forget {
+  margin-top: 10px;
+  color: #322f2f;
+  text-align: center;
+}
+
+.forget a {
+  background: none;
+  border: none;
+  color: #7397e9;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}

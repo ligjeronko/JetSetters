@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Cessna Citation X",
+    "description": "A compact and efficient jet for personal travel, known for its speed and reliability.",
+    "link": "https://example.com/citation-x",
+    "backImage": "images/1.png"
+  },
+  {
+    "title": "Gulfstream G650",
+    "description": "A luxury jet with ample space for comfort and advanced technology for long-distance travel.",
+    "link": "https://example.com/gulfstream-g650",
+    "backImage": "images/2.png"
+  },
+  {
+    "title": "Embraer Phenom 300",
+    "description": "An economical choice for small groups, featuring high performance and efficiency.",
+    "link": "https://example.com/phenom-300",
+    "backImage": "images/3.png"
+  },
+  {
+    "title": "Bombardier Challenger 350",
+    "description": "A versatile jet suitable for both business and leisure, offering spacious interiors.",
+    "link": "https://example.com/challenger-350",
+    "backImage": "images/4.png"
+  },
+  {
+    "title": "Dassault Falcon 7X",
+    "description": "Designed for long-range travel with luxury amenities and exceptional performance.",
+    "link": "https://example.com/falcon-7x",
+    "backImage": "images/5.png"
+  },
+  {
+    "title": "Cessna Citation Latitude",
+    "description": "A state-of-the-art jet with advanced technology, ideal for mid-range trips.",
+    "link": "https://example.com/citation-latitude",
+    "backImage": "images/6.png"
+  },
+  {
+    "title": "Piper Aerostar",
+    "description": "Perfect for corporate travel with spacious interiors and impressive speed.",
+    "link": "https://example.com/aerostar",
+    "backImage": "images/7.png"
+  },
+  {
+    "title": "HondaJet",
+    "description": "An eco-friendly jet option for the conscious traveler, known for its innovative design.",
+    "link": "https://example.com/hondajet",
+    "backImage": "images/8.png"
+  }
+]

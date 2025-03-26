@@ -1,0 +1,43 @@
+/* DropdownMenu.css */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  padding: 10px 15px; /* More padding for a button-like appearance */
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.dropdown-toggle:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* Position below the toggle */
+  left: 0;
+  background-color: #ffffff; /* White background for contrast */
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  width: 200px; /* Fixed width for uniformity */
+}
+
+.dropdown-item {
+  padding: 10px 15px; /* Consistent padding */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.dropdown-item:hover {
+  background-color: #e7f3ff; /* Light blue background on hover */
+  color: #007bff; /* Change text color on hover for emphasis */
+}

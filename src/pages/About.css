@@ -1,0 +1,84 @@
+.page-content-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  text-align: center; /* Center text */
+  padding: 60px 40px; /* Increased top and bottom padding */
+  color: #333; /* Text color */
+  font-family: "Arial", sans-serif; /* Font consistent with nav and login page */
+  background: url("./images/AboutImg.png") no-repeat center center; /* Background image */
+  background-size: cover; /* Ensure the image covers the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 25px 30px rgba(238, 248, 169, 0.736); /* Deeper shadow */
+  max-width: 95%; /* Increased max-width */
+  width: 100%; /* Set to 100% for responsive design */
+  margin: auto; /* Center the entire block */
+  margin-bottom: 40px; /* Add space below the container */
+}
+
+.h1-about {
+  font-size: 2.5em; /* Smaller font size for the heading */
+  margin-bottom: 20px; /* Space below the heading */
+  color: #232425; /* Color for the heading */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow for subtlety */
+  letter-spacing: 1px; /* Reduced spacing between letters */
+  font-weight: bold; /* Bold font for emphasis */
+}
+
+.p-about {
+  margin-bottom: 15px; /* Space between paragraphs */
+  line-height: 1.6; /* Improved readability */
+  font-size: 0.9em; /* Smaller font size for paragraphs */
+  max-width: 800px; /* Max width for paragraphs for better readability */
+  color: #444; /* Darker text color for contrast */
+  text-align: center; /* Centered text for paragraphs */
+  padding: 0 15px; /* Padding on the sides for better spacing */
+}
+
+.map-container {
+  max-width: 1000px;
+  margin: 40px auto; /* Add space above and below the map container */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.map-description {
+  margin-top: 10px; /* Space above the description */
+  font-size: 0.9em; /* Font size for the description */
+  color: #555; /* Color for the description */
+}
+
+.show-more-button {
+  width: 400px;
+  margin: 20px 0; /* Space above and below the button */
+  padding: 10px 20px; /* Padding for the button */
+  font-size: 1em; /* Font size */
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.show-more-button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+.contact-button {
+  padding: 10px 20px; /* Padding for the button */
+  font-size: 1em; /* Font size */
+  background-color: #28a745; /* Button color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.contact-button:hover {
+  background-color: #218838; /* Darker color on hover */
+}

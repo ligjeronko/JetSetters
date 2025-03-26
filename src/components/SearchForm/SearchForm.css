@@ -1,0 +1,132 @@
+/* SearchForm.css */
+
+.search-form-container {
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between elements */
+  align-items: flex-start; /* Align items at the top */
+}
+
+.booking-info {
+  flex: 1; /* Allow the text to take available space */
+  margin-right: 20px; /* Space between text and form */
+  background: linear-gradient(
+    to right,
+    #add8e6,
+    rgba(222, 246, 63, 0.736)
+  ); /* Gradient background */
+  padding: 1rem; /* Add some padding */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.search-form {
+  flex: 1; /* Allow the form to take available space */
+  background: linear-gradient(
+    to right,
+    #add8e6,
+    rgba(222, 246, 63, 0.736)
+  ); /* Gradient background */
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.currency-selector {
+  margin-bottom: 1rem;
+}
+
+.currency-selector-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.trip-type-tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.trip-type-tabs__tab {
+  list-style: none;
+}
+
+.trip-type-tabs__tab-link {
+  text-decoration: none;
+  color: #007bff;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent; /* Initial border for styling */
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.trip-type-tabs__tab-link:hover {
+  background-color: #e7f3ff; /* Light blue on hover */
+}
+
+.trip-type-tabs__tab-link--selected {
+  font-weight: bold;
+  background-color: #007bff;
+  color: rgb(78, 79, 75);
+}
+
+.search-form-segment {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs__responsive-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.passenger-input {
+  display: flex;
+  align-items: center;
+}
+
+.passenger-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 0.5rem; /* Spacing between buttons */
+}
+
+.pax-count {
+  width: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-form__buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttons__button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttons__button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

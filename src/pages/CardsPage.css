@@ -1,0 +1,86 @@
+/* src/pages/CardsPage.css */
+
+.cards-container {
+  display: flex;
+  flex-direction: column; /* Stack title and cards grid vertically */
+  align-items: center; /* Center title horizontally */
+  position: relative; /* Position relative for absolute children */
+  margin: 20px;
+}
+
+.header-container {
+  box-shadow: 0 25px 15px rgba(238, 248, 169, 0.736);
+  perspective: 1000px; /* Add perspective for 3D effect */
+  position: relative; /* Position relative for layering */
+  width: 100%; /* Full width */
+  height: 300px; /* Set height for the header */
+  border-radius: 10px; /* Match the corners */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.header-background {
+  position: absolute; /* Cover the container */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  right: 0; /* Stretch to the right */
+  bottom: 0; /* Stretch to the bottom */
+  background-image: url("./images/JetsCards.png"); /* Background image */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  z-index: 0; /* Behind the text */
+}
+
+.title {
+  position: relative; /* Position relative for text layering */
+  z-index: 1; /* Above the background image */
+  font-size: 2em; /* Size of the title */
+  color: rgba(66, 67, 69, 0.925); /* Title text color */
+  text-align: center; /* Center the title */
+  padding: 5px; /* Space around the title */
+}
+
+.cards-grid {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(4, 1fr); /* Four columns */
+  gap: 20px; /* Space between cards */
+  margin-top: 20px; /* Space between header and cards */
+  width: 100%; /* Full width to fit the container */
+}
+
+.card {
+  display: inline-block;
+  box-shadow: 0 25px 15px rgba(238, 248, 169, 0.736);
+  perspective: 1000px; /* Add perspective for 3D effect */
+}
+
+.card-front,
+.card-back {
+  width: 300px; /* Width of the card */
+  height: 200px; /* Height of the card */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px; /* Rounded corners */
+  color: rgb(98, 121, 239); /* Text color */
+  text-align: center; /* Center text */
+  backface-visibility: hidden; /* Hide the back face when flipped */
+  position: absolute; /* Positioning for the flip effect */
+}
+
+.card-front {
+  background: linear-gradient(to right, #add8e6, rgba(222, 246, 63, 0.736));
+  background-color: lightblue; /* Front color */
+}
+
+.card-back {
+  background-color: cream; /* Back color */
+  transform: rotateY(180deg); /* Rotate back side */
+}
+
+.card:hover .card-front {
+  transform: rotateY(180deg); /* Flip front on hover */
+}
+
+.card:hover .card-back {
+  transform: rotateY(0); /* Show back on hover */
+}

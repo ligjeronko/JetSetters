@@ -1,0 +1,90 @@
+.page-content-contact {
+  height: auto; /* Allow height to adjust based on content */
+  background: linear-gradient(to right, #add8e6, rgba(222, 246, 63, 0.736)),
+    url("./images/ContactContainer.png") no-repeat center center; /* Background image */
+  background-size: cover; /* Ensure the background image covers the container */
+  display: flex; /* Flex layout */
+  justify-content: space-between; /* Space out content and form */
+  align-items: flex-start; /* Align items to the top */
+  color: #333;
+  font-family: "Arial", sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 25px 15px rgba(222, 246, 63, 0.5);
+  max-width: 95%;
+  margin: auto;
+  line-height: 1.2;
+  padding: 20px 50px; /* Adjusted padding for balance */
+}
+
+.h2-contact {
+  color: white;
+}
+
+.contact-info {
+  flex: 1;
+  padding-right: 20px; /* Space between text and form */
+}
+
+.h1-contact {
+  font-size: 2em;
+  margin: 20px 0; /* Added margin for equal space on top and bottom */
+}
+
+.p-contact {
+  margin: 12px 0; /* Added margin for equal space on top and bottom */
+  font-size: 0.9em;
+  line-height: 1.2;
+}
+
+.form-container {
+  background-image: url(./images/ContactForm.png);
+  background-size: cover; /* Ensure the background image covers the container */
+  background-position: center; /* Center the image within the container */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  width: 100%;
+  max-width: 400px; /* Ensure the form doesn’t exceed this width */
+  padding: 20px; /* Add padding for the form elements */
+  border-radius: 8px; /* Optional: Rounded corners for the form */
+  box-shadow: none; /* Remove box shadow to eliminate the white border */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and scaling */
+  margin: 0; /* Ensure no margin to avoid gaps */
+}
+
+/* Add a hover effect for visual feedback */
+.form-container:hover {
+  transform: scale(1.02); /* Slightly scale the form on hover */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Optional: Change background color on hover */
+}
+
+.contact-input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border 0.3s ease; /* Smooth border transition */
+}
+
+.contact-input:focus {
+  border-color: #007bff; /* Highlight border on focus */
+  outline: none; /* Remove default outline */
+}
+
+.submit-button {
+  background-color: #007bff; /* Button color */
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
