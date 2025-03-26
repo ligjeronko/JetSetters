@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 // Checkout the code from your GitHub repository
-                git branch: 'main', url: 'https://github.com/ligjeronko/JetSetters.git'
+                git branch: 'main', url: 'https://github.com/ligjeronko/JetSetters'
             }
         }
 
