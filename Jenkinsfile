@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Jenkinsfile') {
       steps {
-        echo 'Hi, This is my first test.'
+        echo 'This is my first test. ;D'
       }
     }
 
