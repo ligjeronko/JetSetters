@@ -1,18 +1,13 @@
 pipeline {
-  agent any
-  stages {
-    stage('Jenkinsfile') {
-      steps {
-        echo 'This is my first test. ;D'
-      }
-    }
-
-  }
-}
-
-pipeline {
-    agent { label 'Build-in Node' } // Replace with the label of your node
+    agent any
+    
     stages {
+        stage('Jenkinsfile') {
+            steps {
+                echo 'This is my first test. ;D'
+            }
+        }
+
         stage('Checkout Code') {
             steps {
                 checkout([$class: 'GitSCM',
@@ -21,11 +16,13 @@ pipeline {
                 ])
             }
         }
+
         stage('Install Dependencies') {
             steps {
                 sh 'npm install'
             }
         }
+
         stage('Run Tests') {
             steps {
                 sh 'npm test'
