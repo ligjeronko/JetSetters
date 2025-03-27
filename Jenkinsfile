@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Jenkinsfile') {
             steps {
-                echo 'Jenkins Testing Hook;D.'
+                echo 'Jenkins Testing Hook;D Muahahaha.'
             }
         }
 
