@@ -2,21 +2,27 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 
-// Mock `ReactDOM.createRoot` to monitor rendering behavior
+// Mock ReactDOM.createRoot
 jest.mock("react-dom/client", () => ({
   createRoot: jest.fn(() => ({
     render: jest.fn(),
   })),
 }));
 
-describe("index.js", () => {
-  it("renders the App component without crashing", () => {
+describe("index.js Tests", () => {
+  beforeEach(() => {
+    // Clear DOM between tests
+    document.body.innerHTML = "";
+  });
+
+  test("renders App without crashing", () => {
     const root = document.createElement("div");
     root.id = "root";
-    document.body.appendChild(root); // Mock the root element
+    document.body.appendChild(root); // Mock root element
 
-    require("./index"); // Import your index.js file
+    require("./index"); // Load index.js file
 
+    // Assertions
     expect(ReactDOM.createRoot).toHaveBeenCalledWith(
       document.getElementById("root")
     );
@@ -27,10 +33,3 @@ describe("index.js", () => {
     );
   });
 });
-
-
-module.exports = {
-    transform: {
-      '^.+\\.jsx?$': 'babel-jest',
-    },
-  };
